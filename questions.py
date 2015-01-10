@@ -64,7 +64,14 @@ questions = {
     Evaluation Corporation<br>The benchmarks consist of several programs
     released over numerous years to measure performance in computing""",
     "ISA": "Instruction set architecture",
-    "Control dependency": "",
+    "Control dependency": """As opposed to hazards, dependencies are part of
+    the <b>program</b>. The following example illustrates a control dependency:
+    <pre>
+      if (test1) s1;
+      if (test2) s2;
+    </pre>
+    s1 is CD on test1. s2 is CD on test2, but not on test1.
+    """,
     "Reorder buffer": """
     Used by the Tomasulo algorithm for out-of-order execution. Allows for
     speculative exection using four steps: 
