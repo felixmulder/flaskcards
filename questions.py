@@ -34,8 +34,12 @@ questions = {
     "dominance": "In a CFG, if all paths to v are through u - then u dominates v.",
     "basic block": "block of instructions without jumps",
     "inverted page table": "IPT, basically an off-chip TLB. Resides in RAM.",
-    "true sharing misses": "Misses arising from communication of data through cache coherence mechanism",
-    "register renaming": "",
+    "true sharing misses": "Misses arising from communication of data through
+    cache coherence mechanism",
+    "register renaming": """A set of physical registers holds both
+    architecturally visible register as well as temporary data. During
+    instruction issue architectural registers are mapped to physical regsiters.
+    Register renaming is used to get rid of WAR and WAW hazards.""",
     "data dependency": """an instruction (i1) is data dependent on another
     instruction (i2) if i2 produces a value needed by i1. It (i1) can also be
     dependent on i2 if there is an instruction (i3) that produces a value
