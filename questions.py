@@ -28,9 +28,9 @@ questions = {
     "5 Classic pipeline stages": "You should know this. IF, ID, EX, MEM, WB",
     "CPI": "Cycles Per Instruction",
     "dominance": "porn?",
-    "basic block": "",
-    "inverted page table": "",
-    "true sharing misses": "",
+    "basic block": "block of instructions without jumps",
+    "inverted page table": "IPT, basically an off-chip TLB. Resides in RAM.",
+    "true sharing misses": "I seriously don't know, something like: Multiple processors read and write the same word.",
     "register renaming": "",
     "data dependency": """an instruction (i1) is data dependent on another
     instruction (i2) if i2 produces a value needed by i1. It (i1) can also be
