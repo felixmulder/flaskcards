@@ -230,5 +230,12 @@ questions = {
     "Virtual address": """The address space available to a process. The virtual
     addresses are separate from physical addresses and are mapped by the OS.
     This provides process isolation. Several processes sharing the same
-    physical memory. Relocation."""
+    physical memory. Relocation.""",
+
+
+
+
+
+
+    "THE FOUR C:s": ""
 }

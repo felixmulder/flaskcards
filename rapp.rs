@@ -1,8 +1,10 @@
 extern crate serialize;
+extern crate regex;
 
 use std::collections::HashMap;
 use std::io;
 use serialize::json;
+use regex::Regex;
 
 fn read_questions(path: &'static str) -> HashMap<String, String> {
     let contents = io::File::open(&Path::new(path)).read_to_string();
@@ -21,6 +23,10 @@ fn read_questions(path: &'static str) -> HashMap<String, String> {
 
 #[allow(unused_must_use)]
 fn main() {
+    let reg_tag = match Regex::new(r"<[a-z^<^>/]*>") {
+        Ok(reg) => reg,
+        Err(why) => panic!("invalid regex {}", why),
+    };
     let questions = read_questions("questions.py");
     let indices = range(1, questions.len()).rev();
     let mut q_i = questions.iter().zip(indices);
@@ -29,10 +35,13 @@ fn main() {
     for ((q, a), r) in q_i {
         println!("{} questions remaining!", r);
         println!("Press any key for question...");
-        input.read_char();
+        input.read_line();
         println!("Question: {}", q);
         println!("Press any key for answer...");
-        input.read_char();
-        println!("Answer: {}", a);
+        input.read_line();
+        let pretty_a = reg_tag.replace_all(a.as_slice(), "");
+        println!("Answer: {}", pretty_a);
     }
+
+    println!("Congratulations, you are done.");
 }
