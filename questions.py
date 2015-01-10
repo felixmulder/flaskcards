@@ -3,7 +3,11 @@ questions = {
     "VLIW": "Very Long Instruction Word-processor. ILP horny processor.",
     "Score-boarding": "Stores data dependencies of every instruction. Used for instruction scheduling.",
     "Shared-memory architecture": "Several processors share the same memory.",
-    "Amdahl's law": "Enhancement E accelerates a fraction F of a program by a factor S.",
+    "Amdahl's law": """Enhancement E accelerates a fraction F of a program by a
+    factor S.
+    <pre>
+    Speedup = 1/(1-F + F/S)
+    </pre>""",
     "Virtual memory miss": "The memory location is not stored in the TLB and a page table walk is required.",
     "Page walk": "The CPU walks the page tables in order to find the virtual address. It is then added to the TLB.",
     "Bus snooping": "Caches monitor address lines for write accesses to memory locations that have been cached. "
@@ -27,7 +31,7 @@ questions = {
                "Data hazard: Data dependencies between instructions. Structural hazard: Simultaneous use of a HW resource. Control hazard: Change in program flow.",
     "5 Classic pipeline stages": "You should know this. IF, ID, EX, MEM, WB",
     "CPI": "Cycles Per Instruction",
-    "dominance": "porn?",
+    "dominance": "In a CFG, if all paths to v are through u - then u dominates v.",
     "basic block": "block of instructions without jumps",
     "inverted page table": "IPT, basically an off-chip TLB. Resides in RAM.",
     "true sharing misses": "I seriously don't know, something like: Multiple processors read and write the same word.",
