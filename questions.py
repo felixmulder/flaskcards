@@ -48,9 +48,18 @@ questions = {
              data-level parallelism (DLP) by applying the same operations to multiple items of data in parallel. Each processor
              has its own data memory but there is a single instruction memory and control processor, which fetches and dispatches
              instructions""",
-    "CDB": "",
-    "make the common case fast": "",
-    "locality of reference": "",
+    "CDB": """Common data bus, when used with a Reorder Buffer it acts as the
+    interface betweent the ROB and the FUs""",
+    "make the common case fast": """Investing in hardware that is used often
+    makes the most sense for a general speedup""",
+    "locality of reference": """
+    <ul>
+      <li>Temporal locality - close usage in time</li>
+      <li>Spatial locality - close in memory</li>
+    </ul>
+    By having both close, make caches possible. (If they are far apart, that
+    makes it extremely difficult to cache...)
+    """,
     "The SPEC benchmark series": "",
     "ISA": "",
     "Control dependency": "",
