@@ -22,9 +22,12 @@ fn read_questions(path: &'static str) -> HashMap<String, String> {
 #[allow(unused_must_use)]
 fn main() {
     let questions = read_questions("questions.py");
+    let indices = range(1, questions.len()).rev();
+    let mut q_i = questions.iter().zip(indices);
     let mut input = io::stdio::stdin();
 
-    for (q, a) in questions.iter() {
+    for ((q, a), r) in q_i {
+        println!("{} questions remaining!", r);
         println!("Press any key for question...");
         input.read_char();
         println!("Question: {}", q);
