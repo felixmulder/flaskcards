@@ -24,7 +24,7 @@ questions = {
     "True dependencies": "",
     "Hazards": "",
     "5 Classic pipeline stages": "",
-    "CPI": "",
+    "CPI": "Cycles Per Instruction",
     "dominance": "",
     "basic block": "",
     "inverted page table": "",
