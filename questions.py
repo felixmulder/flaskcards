@@ -35,8 +35,16 @@ questions = {
     "sequential consistency": "",
     "general purpose register instruction set architecture": "",
     "memory hierarchy": "",
-    "MIMD": "Multiple Instruction (streams), Multiple Data (streams)",
-    "SIMD": "Single  Instruction (streams), Multiple Data (streams)",
+    "MIMD": "Multiple Instruction (streams), Multiple Data (streams). 
+             Each processor fetches its own instruction and 
+             operates on its own data, and it targets task-level parallelism (TLP). In general, MIMD, is more flexible
+             than SIMD and thus more general, applicable, but is it inherently more expensive than SIMD. MIMD can also
+             exploit data-level parallelism (DLP), although the overhead is likely to be higher than SIMD computers.",
+    "SIMD": "Single  Instruction (streams), Multiple Data (streams).
+             The same instruction is executed by multiple processors using different data streams. SIMD computers exploit
+             data-level parallelism (DLP) by applying the same operations to multiple items of data in parallel. Each processor
+             has its own data memory but there is a single instruction memory and control processor, which fetches and dispatches
+             instructions",
     "make the common case fast": "",
     "locality of reference": "",
     "The SPEC benchmark series": "",
