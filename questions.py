@@ -32,7 +32,10 @@ questions = {
     "inverted page table": "",
     "true sharing misses": "",
     "register renaming": "",
-    "data dependency": "",
+    "data dependency": """an instruction (i1) is data dependent on another
+    instruction (i2) if i2 produces a value needed by i1. It (i1) can also be
+    dependent on i2 if there is an instruction (i3) that produces a value
+    needed by i2.""",
     "way prediction": "",
     "unified cache": "",
     "sequential consistency": "",
