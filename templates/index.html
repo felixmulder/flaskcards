@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    div.centered {
+      text-align: center;
+      width: 40em;
+      margin: 0 auto;
+    }
+
+    input.answer-input {
+      width: 100%;
+      height: 4em;
+    }
+
+    p.answer {
+      display: none;
+    }
+
+    .btn {
+      margin-top: 1em;
+      width: 100%;
+    }
+  </style>
+  <script>
+  $(document).ready(function () {
+    $("button.btn").click(function() {
+      $("p.answer").toggle()
+    })
+  })
+  </script>
+  <body>
+    <div class="centered">
+      <h1>Question</h1>
+      <p class="question">
+        {{ question }}
+      </p>
+      <hr>
+      <p class="answer">
+        {{ answer }}
+      </p>
+      <input class="answer-input" type="textarea"/>
+      <button class="btn btn-success" type="submit">Svar</button>
+      <a class="btn btn-info" href="/">Ny fråga</a>
+    </div>
+  </body>
+</html>
