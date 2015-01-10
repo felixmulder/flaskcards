@@ -19,7 +19,7 @@
       height: 4em;
     }
 
-    p.answer {
+    div.answer {
       display: none;
     }
 
@@ -31,7 +31,7 @@
   <script>
   $(document).ready(function () {
     $("button.btn").click(function() {
-      $("p.answer").toggle()
+      $("div.answer").toggle()
     })
   })
   </script>
@@ -39,13 +39,13 @@
     <div class="centered">
       <h1>Question</h1>
       <h2>Left: {{ left }}</h2>
-      <p class="question">
-        {{ question }}
-      </p>
+      <div class="question">
+        {{ question | safe }}
+      </div>
       <hr>
-      <p class="answer">
-        {{ answer }}
-      </p>
+      <div class="answer">
+        {{ answer | safe }}
+      </div>
       <input class="answer-input" type="textarea"/>
       <button class="btn btn-success" type="submit">Svar</button>
       <a class="btn btn-info" href="/">Ny fråga</a>

@@ -48,13 +48,43 @@ questions = {
              data-level parallelism (DLP) by applying the same operations to multiple items of data in parallel. Each processor
              has its own data memory but there is a single instruction memory and control processor, which fetches and dispatches
              instructions""",
+    "CDB": "",
     "make the common case fast": "",
     "locality of reference": "",
     "The SPEC benchmark series": "",
     "ISA": "",
     "Control dependency": "",
-    "Reorder buffer": "",
-    "False sharing": "",
+    "Reorder buffer": """
+    Used by the Tomasulo algorithm for out-of-order execution. Allows for
+    speculative exection using four steps: 
+    <ul>
+      <li>
+        <b>Issue</b> - Get instruction from FP Op Queue, if reservation station
+        and reorder buffer slot free, issue instr & send operands & reorder
+        buffer nbr for destination
+      </li>
+      <li>
+        <b>Execution</b> - operate on operands (EX), if both operands ready -
+        execute. If not, watch CDB for results. When both operands are in
+        reservation station: execute
+      </li>
+      <li>
+        <b>Write Result</b> - complete execution. Write on Common Data Bus to await
+        all awaiting FUs & reorder buffer; mark reservation station available
+      </li>
+      <li>
+        <b>Commit</b> - update register with reorder result. When instr. is at
+        head of reorder buffer & result is present: update register with result
+        or write to memory (and remove instruction from ROB).
+      </li>
+    </ul>""",
+    "False sharing": """performance-degrading usage pattern that can arise in
+    systems with distributed, coherent caches at the size of the smallest
+    resource block managed by the caching mechanism. When a system participant
+    attempts to periodically access data that will never be altered by another
+    party, but that data shares a cache block with data that is altered, the
+    caching protocol may force the first participant to reload the whole unit
+    despite a lack of logical necessity.""",
     "imprecise exceptions": "",
     "Five levels of parallelism (used to increase computer system performance)": "",
     "TLB": "Translation look-aside buffer, a cache used by memory management hardware to improve virtual address translation speed",
