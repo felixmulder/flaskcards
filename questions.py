@@ -62,8 +62,11 @@ questions = {
     "MFLOPS": "Million Floating Operations Per Second.",
 
     "Name dependencies (name two kinds)": """Two instructions use same name
-    (register or memory address) but do not exchange data.<br>Anti-dependence:
-    WAR in HW. Output dependence: WAW in HW.""",
+    (register or memory address) but do not exchange data.
+    <ul>
+      <li>Anti-dependence: WAR in HW.</li>
+      <li>Output dependence: WAW in HW.</li>
+    </ul>""",
 
     "True dependencies": """Data is transmitted between instructions, RAW.""",
 
