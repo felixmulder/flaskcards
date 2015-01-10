@@ -1,5 +1,3 @@
-import copy
-
 questions = {
     "Memory bandwidth": "bytes / second from memory.",
 
@@ -244,6 +242,3 @@ questions = {
 
     "THE FOUR C:s": ""
 }
-
-def get_questions():
-    return copy.deepcopy(questions)
