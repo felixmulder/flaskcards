@@ -107,7 +107,25 @@ questions = {
     caching protocol may force the first participant to reload the whole unit
     despite a lack of logical necessity.""",
     "imprecise exceptions": "",
-    "Five levels of parallelism (used to increase computer system performance)": "",
+    "Five levels of parallelism (used to increase computer system performance)": """
+    <ul>
+      <li>Bit-level, more bits - more parallelism</li>
+      <li>
+        ILP - instruction level parallelism. Parallelism among instructions,
+        pipeline, superscalar, dynamic scheduling
+      </li>
+      <li>
+        Loop level - Vector Procssors, software scheduling,
+        compiler technology
+      </li>
+      <li>
+        Thread Level -  multithreading, multicore processors, hyperthreading
+      </li>
+      <li>
+        Program Level - multiprocessor computers, multicomputers, clusters
+      </li>
+    </ul>
+    """,
     "TLB": "Translation look-aside buffer, a cache used by memory management hardware to improve virtual address translation speed",
     "Virtual address": "The address space available to a process. The virtual addresses are separate from physical addresses and are mapped by the OS. This provides process isolation. Several processes sharing the same physical memory. Relocation."
 }
