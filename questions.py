@@ -82,11 +82,13 @@ questions = {
 
     "CPI": "Cycles Per Instruction",
 
-    "dominance": """In a CFG, if all paths to v are through u - then u dominates v.""",
+    "dominance": """In a CFG, if all paths to v are through u - then u
+    dominates v.""",
 
     "basic block": """block of instructions without jumps""",
 
-    "inverted page table": """IPT, basically an off-chip TLB. Resides in RAM.""",
+    "inverted page table": """IPT, basically an off-chip TLB. Resides in
+    RAM.""",
 
     "true sharing misses": """Misses arising from communication of data through
     cache coherence mechanism""",
@@ -108,13 +110,11 @@ questions = {
     "unified cache": "A cache that holds both instructions and data",
 
     "sequential consistency": """Sequential consistency requires that the
-    result of any execution be the same as if the memory accesses executed by each
-    processor were kept in program order.""",
+    result of any execution be the same as if the memory accesses executed by
+    each processor were kept in program order.""",
 
     "general purpose register instruction set architecture": """GPR have only
-    explicit operands,
- either memory locations or registers,
- as opposed to
+    explicit operands, either memory locations or registers, as opposed to
     implicit operands like stack top or acumulator.""",
 
     "memory hierarchy": """In real life bigger memory is slower and faster
@@ -201,8 +201,6 @@ questions = {
     party, but that data shares a cache block with data that is altered, the
     caching protocol may force the first participant to reload the whole unit
     despite a lack of logical necessity.""",
-
-    "imprecise exceptions": "",
 
     "Five levels of parallelism (used to increase computer system performance)": """
     <ul>
