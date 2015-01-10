@@ -23,7 +23,7 @@ def main():
         raw_input("Press key to get question...")
         q, a = get_question()
         print("%s\n" % q)
-        raw_input("Please answer the question in you mind, then press any key to view answer...")
+        raw_input("Please answer the question in your mind, then press any key to view answer...")
         print("%s\n" % a)
     
 if __name__ == "__main__":
