@@ -110,10 +110,4 @@ questions = {
     "Five levels of parallelism (used to increase computer system performance)": "",
     "TLB": "Translation look-aside buffer, a cache used by memory management hardware to improve virtual address translation speed",
     "Virtual address": "The address space available to a process. The virtual addresses are separate from physical addresses and are mapped by the OS. This provides process isolation. Several processes sharing the same physical memory. Relocation."
-    "Structural hazards":"Simultaneous use of a HW resource"
-    "Data hazards":"Data dependencies between instructions"
-    "RAW":"Read-After-Write"
-    "WAR":"Write-After-Read"
-    "WAW":"Write-after-write"
-    "Control hazards":"Change in program flow"
 }
