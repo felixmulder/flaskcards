@@ -1,3 +1,5 @@
+import copy
+
 questions = {
     "Memory bandwidth": "bytes / second from memory.",
 
@@ -70,9 +72,12 @@ questions = {
 
     "True dependencies": """Data is transmitted between instructions, RAW.""",
 
-    "Hazards": """Prevents an instruction from being executed. Data hazard:
-        Data dependencies between instructions. Structural hazard: Simultaneous
-        use of a HW resource. Control hazard: Change in program flow.""",
+    "Hazards": """Prevents an instruction from being executed.
+    <ul>
+      <li>Data hazard: Data dependencies between instructions</li>
+      <li> Structural hazard: Simultaneous use of a HW resource</li>
+      <li>Control hazard: Change in program flow</li>
+    </ul>""",
 
     "5 Classic pipeline stages": """You should know this.
     <ul>
@@ -239,3 +244,6 @@ questions = {
 
     "THE FOUR C:s": ""
 }
+
+def get_questions():
+    return copy.deepcopy(questions)
