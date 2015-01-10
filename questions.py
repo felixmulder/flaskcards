@@ -60,8 +60,10 @@ questions = {
     By having both close, make caches possible. (If they are far apart, that
     makes it extremely difficult to cache...)
     """,
-    "The SPEC benchmark series": "",
-    "ISA": "",
+    "The SPEC benchmark series": """SPEC stands for Standard Performance
+    Evaluation Corporation<br>The benchmarks consist of several programs
+    released over numerous years to measure performance in computing""",
+    "ISA": "Instruction set architecture",
     "Control dependency": "",
     "Reorder buffer": """
     Used by the Tomasulo algorithm for out-of-order execution. Allows for
