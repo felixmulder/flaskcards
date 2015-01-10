@@ -34,7 +34,7 @@ questions = {
     "dominance": "In a CFG, if all paths to v are through u - then u dominates v.",
     "basic block": "block of instructions without jumps",
     "inverted page table": "IPT, basically an off-chip TLB. Resides in RAM.",
-    "true sharing misses": "I seriously don't know, something like: Multiple processors read and write the same word.",
+    "true sharing misses": "Misses arising from communication of data through cache coherence mechanism",
     "register renaming": "",
     "data dependency": """an instruction (i1) is data dependent on another
     instruction (i2) if i2 produces a value needed by i1. It (i1) can also be
