@@ -263,10 +263,30 @@ questions = {
     "The four C:s": """Why cache miss?
     Compulsory - misses in an infinite cache.
     Capacity - misses in a fully associative cache.
-    Conflict - misses in an N-way associative cache""",
+    Conflict - misses in an N-way associative cache.
+    Coherent(?) - something with cache coherence misses.""",
 
     """With which of the following strategies is a replacement algorithm needed?
     - Direct mapping
     - Set-associative mapping
-    - Fully associative mapping""": """Set-associative and fully associative."""
+    - Fully associative mapping""": """Set-associative and fully associative.""",
+
+    """What are the advantages/disadvantages of fixed-length and variable-length
+    in- struction encodings?""": """
+    Fixed: Fast decode (higher clock rate), require more memory.
+    Variable: Complex decode (slower clock rate), require less memory.""",
+
+    """Briefly give two ways in which loop unrolling can increase performance
+    and one in which it can decrease performance.""": """
+    + Fewer branch instructions
+    + Reorder instructions across iterations
+    + Better register naming
+    
+    - More I-cache pressure
+    - Large jumps""",
+
+    """Amdahl's Law can handle multiple speedups, we have two enhancements E1
+    and E2, where E1 gives a SE1 speedup and E2 gives a SE2 speedup, E1 is
+    available FE1 of the time and E2 is available FE2 of the time. Calculate
+    the speedup.""": """1 / (1 - FE1 - FE2  + FE1/SE1 + FE2/SE2)"""
 }
