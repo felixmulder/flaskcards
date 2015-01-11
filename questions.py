@@ -259,5 +259,5 @@ questions = {
     addresses are separate from physical addresses and are mapped by the OS.
     This provides process isolation. Several processes sharing the same
     physical memory. Relocation.""",
-    "The four C:s": """ """,
+    "The four C:s": """ """
     }
