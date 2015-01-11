@@ -1,0 +1,8 @@
+[package]
+name = "rapp"
+version = "0.0.1"
+authors = []
+
+[dependencies]
+regex = "0.1.8"
+regex_macros = "0.1.5"
