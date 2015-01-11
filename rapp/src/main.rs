@@ -1,10 +1,9 @@
-#![feature(phase)]
-
-extern crate serialize;
+#![feature(plugin)]
+#[plugin] #[no_link]
+extern crate regex_macros;
 extern crate regex;
 
-#[phase(plugin)]
-extern crate regex_macros;
+extern crate serialize;
 
 use std::collections::HashMap;
 use std::io;
@@ -18,7 +17,7 @@ fn read_questions(path: &'static str) -> HashMap<String, String> {
             let sliced = proper.as_slice().slice_from(12);
             match json::decode(sliced) {
                 Ok(res) => res,
-                Err(why) => panic!("syntax error: {}", why),
+                Err(why) => panic!("syntax error: {:?}", why),
             }
         },
         Err(why) => panic!("io error: {}", why),
