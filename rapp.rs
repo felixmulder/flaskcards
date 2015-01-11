@@ -1,10 +1,14 @@
+#![feature(phase)]
+
 extern crate serialize;
 extern crate regex;
+
+#[phase(plugin)]
+extern crate regex_macros;
 
 use std::collections::HashMap;
 use std::io;
 use serialize::json;
-use regex::Regex;
 
 fn read_questions(path: &'static str) -> HashMap<String, String> {
     let contents = io::File::open(&Path::new(path)).read_to_string();
@@ -23,10 +27,7 @@ fn read_questions(path: &'static str) -> HashMap<String, String> {
 
 #[allow(unused_must_use)]
 fn main() {
-    let reg_tag = match Regex::new(r"<[a-z^<^>/]*>") {
-        Ok(reg) => reg,
-        Err(why) => panic!("invalid regex {}", why),
-    };
+    let reg_tag = regex!(r"<[a-z^<^>/]*>");
     let questions = read_questions("questions.py");
     let indices = range(1, questions.len()).rev();
     let mut q_i = questions.iter().zip(indices);
