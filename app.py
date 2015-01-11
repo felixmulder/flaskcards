@@ -1,8 +1,12 @@
 #!/bin/env python
+import copy
 import random
 from flask import Flask
-from questions import get_questions
+import questions as question_module
 from flask import render_template
+
+def get_questions():
+    return copy.deepcopy(question_module.questions)
 
 questions = get_questions()
 app = Flask(__name__)

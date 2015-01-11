@@ -1,0 +1,25 @@
+- How can Gene Amdahl heklp you decide which enhancement is the best?
+
+- Is a larger cache better than higher clock frequency?
+
+- What is a superscalar CPU?
+
+- What is the difference between a direct mapped cache and a set associative?
+
+- How come a TLB is essential to virtual memory efficiency?
+
+- What is pipelining?
+
+- Is out-of-order execution really possible?
+
+- How can the hardware rearrange your program?
+
+- Why is pipelining fast than combinatorics?
+
+- Different levels of cache - why?
+
+- Snooping on busses?
+
+- Is the ARM ISA or RISC?
+
+- How much memory bandwidth does a modern CPU need?
