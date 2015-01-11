@@ -259,5 +259,14 @@ questions = {
     addresses are separate from physical addresses and are mapped by the OS.
     This provides process isolation. Several processes sharing the same
     physical memory. Relocation.""",
-    "The four C:s": """ """
-    }
+    
+    "The four C:s": """Why cache miss?
+    Compulsory - misses in an infinite cache.
+    Capacity - misses in a fully associative cache.
+    Conflict - misses in an N-way associative cache""",
+
+    """With which of the following strategies is a replacement algorithm needed?
+    - Direct mapping
+    - Set-associative mapping
+    - Fully associative mapping""": """Set-associative and fully associative."""
+}
