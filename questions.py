@@ -57,9 +57,7 @@ questions = {
       <li>T_c (s): Time to execute one cycle</li>
     </ul>
     Which can be expanded to cover a system using a cache:
-    <pre>
-    T_exe = IC * (CPI + (mem accesses / instr) * miss rate * miss penalty * T_c
-    </pre>
+    <pre>T_exe = IC * (CPI + (mem accesses / instr) * miss rate * miss penalty * T_c</pre>
     <ul>
       <li>Miss rate (%): Chance to miss a memory access</li>
       <li>Miss penalty (ns): Cost of a miss</li>
@@ -261,32 +259,39 @@ questions = {
     physical memory. Relocation.""",
     
     "The four C:s": """Why cache miss?
-    Compulsory - misses in an infinite cache.
-    Capacity - misses in a fully associative cache.
-    Conflict - misses in an N-way associative cache.
-    Coherent(?) - something with cache coherence misses.""",
+    <ul>
+      <li>Compulsory - misses in an infinite cache</li>
+      <li>Capacity - misses in a fully associative cache</li>
+      <li>Conflict - misses in an N-way associative cache</li>
+      <li>Coherent(?) - something with cache coherence misses</li>
+    </ul>""",
 
     """With which of the following strategies is a replacement algorithm needed?
-    - Direct mapping
-    - Set-associative mapping
-    - Fully associative mapping""": """Set-associative and fully associative.""",
+    <ul>
+      <li>Direct mapping</li>
+      <li>Set-associative mapping</li>
+      <li>Fully associative mapping</li>
+    </ul>
+    """: """Set-associative and fully associative.""",
 
     """What are the advantages/disadvantages of fixed-length and variable-length
     in- struction encodings?""": """
-    Fixed: Fast decode (higher clock rate), require more memory.
-    Variable: Complex decode (slower clock rate), require less memory.""",
+    <ul>
+      <li>Fixed: Fast decode (higher clock rate), require more memory</li>
+      <li>Variable: Complex decode (slower clock rate), require less memory</li>
+    </ul>""",
 
     """Briefly give two ways in which loop unrolling can increase performance
     and one in which it can decrease performance.""": """
-    + Fewer branch instructions
-    + Reorder instructions across iterations
-    + Better register naming
+    + Fewer branch instructions<br>
+    + Reorder instructions across iterations<br>
+    + Better register naming<br><br>
     
-    - More I-cache pressure
+    - More I-cache pressure<br>
     - Large jumps""",
 
     """Amdahl's Law can handle multiple speedups, we have two enhancements E1
     and E2, where E1 gives a SE1 speedup and E2 gives a SE2 speedup, E1 is
     available FE1 of the time and E2 is available FE2 of the time. Calculate
-    the total speedup.""": """1 / (1 - FE1 - FE2  + FE1/SE1 + FE2/SE2)"""
+    the total speedup.""": """<pre>1 / (1 - FE1 - FE2  + FE1/SE1 + FE2/SE2)</pre>"""
 }
