@@ -288,5 +288,5 @@ questions = {
     """Amdahl's Law can handle multiple speedups, we have two enhancements E1
     and E2, where E1 gives a SE1 speedup and E2 gives a SE2 speedup, E1 is
     available FE1 of the time and E2 is available FE2 of the time. Calculate
-    the speedup.""": """1 / (1 - FE1 - FE2  + FE1/SE1 + FE2/SE2)"""
+    the total speedup.""": """1 / (1 - FE1 - FE2  + FE1/SE1 + FE2/SE2)"""
 }
