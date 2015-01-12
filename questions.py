@@ -18,6 +18,8 @@ questions = {
     "Page walk": """The CPU walks the page tables in order to find the virtual
     address. It is then added to the TLB.""",
 
+    "Page fault": "An access to a page, which is not in physical memory",
+
     "Page table": """The datastructure used by a virtual memory system in a
     computer OS to store the mapping between virtual memory addresses and
     physical memory addresses.""",
