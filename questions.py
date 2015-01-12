@@ -342,5 +342,13 @@ questions = {
     Transfering larger pages from secondary storage is more efficient.
     Reducing the number of TLB misses, since a larger part of the total
     pages are in the TLB.
+    """,
+
+    "How do you overcome the different hazards?": """
+    <ul>
+      <li>Data Hazards - dynamic scheduling</li>
+      <li>Control Hazards - branch predictions</li>
+      <li>Structural Hazards - more hardware</li>
+    </ul>
     """
 }
