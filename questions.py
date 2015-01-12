@@ -336,12 +336,15 @@ questions = {
     Full associativity. The miss penalty is VERY HIGH.""",
 
     "What are the benifits of using a larger page size?": """
-
-    Smaller page table.
-    Larger caches with fast cache hit times.
-    Transfering larger pages from secondary storage is more efficient.
-    Reducing the number of TLB misses, since a larger part of the total
-    pages are in the TLB.
+    <ul>
+      <li>Smaller page table</li>
+      <li>Larger caches with fast cache hit times</li>
+      <li>Transfering larger pages from secondary storage is more efficient</li>
+      <li>
+        Reducing the number of TLB misses, since a larger part of the total
+        pages are in the TLB
+      </li>
+    </ul>
     """,
 
     "How do you overcome the different hazards?": """
