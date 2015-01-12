@@ -306,5 +306,21 @@ questions = {
       fully associative
       </li>
     </ul>
-    """
+    """,
+
+    "Cache optimizations: Reduce miss rate (3 ways)": """
+    (1) Larger block size. This will also reduce compulsory misses.
+    However, it'll increase the miss penalty.
+    (2) Larger caches. But potentially larget hit time.
+    (3) Higher associativity. But this increases hit penalty and hit time.""",
+
+    "Cache optimizations: Reduce hit penalty (2 ways)": """
+    (1) Multilevel caches. I.e. if L1 misses it could be available in L2.
+    (2) Give priority to Read Misses over Write Misses. * Argument? *""",
+
+    "Cache optimizations: Reduce hit time (1 way)": """
+    (1) Avoid address translation during cache indexing. * Argument? *""",
+
+    "What is page coloring?": """
+    Require a certain pattern of a page address, specific ending etc."""
 }
