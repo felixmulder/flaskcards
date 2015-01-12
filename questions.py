@@ -322,5 +322,25 @@ questions = {
     (1) Avoid address translation during cache indexing. * Argument? *""",
 
     "What is page coloring?": """
-    Require a certain pattern of a page address, specific ending etc."""
+    Require a certain pattern of a page address, specific ending etc.""",
+
+    "What is virtual memory and why is it used?": """
+    Divides physical memory into blocks and allocates them to different processes.
+
+    Protection, processes can't access other processes' memory. Other privileges
+    such as superuser, read/write and execute permissions apply.
+    Abstraction, physical memory can be on main memory or
+    secondary physical storage.""",
+
+    "What kind of associativity is normally used for virtual memory?": """
+    Full associativity. The miss penalty is VERY HIGH.""",
+
+    "What are the benifits of using a larger page size?": """
+
+    Smaller page table.
+    Larger caches with fast cache hit times.
+    Transfering larger pages from secondary storage is more efficient.
+    Reducing the number of TLB misses, since a larger part of the total
+    pages are in the TLB.
+    """
 }
