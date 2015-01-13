@@ -373,5 +373,19 @@ questions = {
     request has been made. The memory module has to arbitrate for the bus and
     then sends the reply with the memory contents back to the processor.
     Between the request and the reply, the bus is free to be used by other bus
-    master"""
+    master""",
+
+    """What distinguishes directory-based cache coherence schemes from
+    snoopy-based cache coherence schemes in multiprocessor with shared memory?
+    Why are they useful""": """Snoopy cache coherence protocols rely upon the
+    broadcast nature of a shared bus. For scalable multiprocessors a shared
+    bus cannot be used since it would be choked by the amount of communication.
+    Therefore, scalable interconnection networks are used. These do not support
+    broadcast operations well and directory based cache coherence protocols are
+    therefore used. In such a protocol, a directory is kept at the
+    (distributed) memory and this directory keeps track of the locations of
+    possible copies of a memory block that reside in the caches of different
+    processors. When a coherence operation needs to be performed, the directory
+    is consulted and separate messages are sent (by the hardware) to the
+    processor that needs"""
 }
