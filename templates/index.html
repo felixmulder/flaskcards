@@ -41,7 +41,7 @@
       $("div.answer").toggle()
     })
 
-    $("input.answer-input").keyup(function(ev) {
+    $(document.body).keyup(function(ev) {
       if (ev.which === 13) {
         if ($("div.answer").is(':visible'))
           $("a.btn-info")[0].click()

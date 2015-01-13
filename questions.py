@@ -309,17 +309,24 @@ questions = {
     """,
 
     "Cache optimizations: Reduce miss rate (3 ways)": """
-    (1) Larger block size. This will also reduce compulsory misses.
-    However, it'll increase the miss penalty.
-    (2) Larger caches. But potentially larget hit time.
-    (3) Higher associativity. But this increases hit penalty and hit time.""",
+    <ol>
+    <li>
+      Larger block size. This will also reduce compulsory misses.  However,
+      it'll increase the miss penalty
+    </li>
+    <li>Larger caches. But potentially larget hit time</li>
+    <li>Higher associativity. But this increases hit penalty and hit time</li>
+    </ol>""",
 
-    "Cache optimizations: Reduce hit penalty (2 ways)": """
-    (1) Multilevel caches. I.e. if L1 misses it could be available in L2.
-    (2) Give priority to Read Misses over Write Misses. * Argument? *""",
+    "Cache optimizations: Reduce miss penalty (2 ways)": """
+    <ol>
+      <li>Multilevel caches. I.e. if L1 misses it could be available in L2</li>
+      <li>Give priority to Read Misses over Write Misses</li>
+    </ol> * Argument?
+    *""",
 
     "Cache optimizations: Reduce hit time (1 way)": """
-    (1) Avoid address translation during cache indexing. * Argument? *""",
+    Avoid address translation during cache indexing. * Argument? *""",
 
     "What is page coloring?": """
     Require a certain pattern of a page address, specific ending etc.""",
@@ -356,14 +363,15 @@ questions = {
     """,
 
     "What can be done to reduce branch penalty (on predicted branches)?":
-    """Insert a <b>branch target buffer</i> in the IF stage. This will reduce
+    """Insert a <b>branch target buffer</b> in the IF stage. This will reduce
     the penalty for correctly predicted branches to zero.""",
 
-    "What is the difference between a <b>split-transaction bus</b> and a
-    regular processor-memory bus?": """In a split-transaction bus, the request
-    operation, of, e.g. a read operation, is separated from the reply. If a
-    pro- cessor reads from a memory, it relinquishes the bus when the request
-    has been made. The memory module has to arbitrate for the bus and then
-    sends the reply with the memory contents back to the processor. Between the
-    request and the reply, the bus is free to be used by other bus master"""
+    """What is the difference between a <b>split-transaction bus</b> and a
+    regular processor-memory bus?""": """In a split-transaction bus, the
+    request operation, of, e.g. a read operation, is separated from the reply.
+    If a pro- cessor reads from a memory, it relinquishes the bus when the
+    request has been made. The memory module has to arbitrate for the bus and
+    then sends the reply with the memory contents back to the processor.
+    Between the request and the reply, the bus is free to be used by other bus
+    master"""
 }
