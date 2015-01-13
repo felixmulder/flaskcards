@@ -353,5 +353,17 @@ questions = {
       <li>Control Hazards - branch predictions</li>
       <li>Structural Hazards - more hardware</li>
     </ul>
-    """
+    """,
+
+    "What can be done to reduce branch penalty (on predicted branches)?":
+    """Insert a <b>branch target buffer</i> in the IF stage. This will reduce
+    the penalty for correctly predicted branches to zero.""",
+
+    "What is the difference between a <b>split-transaction bus</b> and a
+    regular processor-memory bus?": """In a split-transaction bus, the request
+    operation, of, e.g. a read operation, is separated from the reply. If a
+    pro- cessor reads from a memory, it relinquishes the bus when the request
+    has been made. The memory module has to arbitrate for the bus and then
+    sends the reply with the memory contents back to the processor. Between the
+    request and the reply, the bus is free to be used by other bus master"""
 }
